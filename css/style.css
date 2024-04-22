@@ -13,7 +13,7 @@ body {
 
 /* Custom styles */
 .header-bg {
-    background-image: url('res/herobg.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-image: url('/res/herobg.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     position: relative; /* Position the overlay */
