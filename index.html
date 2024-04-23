@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <style>
+        /* Custom styles */
+        .bg-green {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+        }
+        .btn-green {
+            background-color: #4CAF50; /* Green background */
+            border-color: #4CAF50; /* Green border */
+        }
+        .btn-green:hover {
+            background-color: #45a049; /* Darker green background on hover */
+            border-color: #45a049; /* Darker green border on hover */
+        }
+        .text-green {
+            color: #4CAF50; /* Green text */
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,20 +37,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link text-green" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link text-green" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link text-green" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-success text-white p-3 header-bg position-relative"> <!-- Add 'position-relative' class here -->
+    <header class="bg-green text-white p-3 header-bg position-relative"> <!-- Add 'position-relative' class here -->
         <div class="overlay"></div> <!-- Overlay for darkening the image -->
         <div class="container col-xxl-8 px-4 py-5 header-content"> <!-- Add 'header-content' class here -->
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -43,7 +61,7 @@
                     <h1 class="display-5 fw-bold lh-1 mb-3">Impact Map</h1>
                     <p class="lead">Track the impact of our tree planting efforts in Bangladesh. Help us make a greener world.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="contribute.html" class="btn btn-primary btn-lg px-4 me-md-2">Contribute</a> <!-- Link to contribute.html -->
+                        <a href="contribute.html" class="text-light btn btn-green btn-lg px-4 me-md-2">Contribute</a> <!-- Link to contribute.html -->
                         <a href="impact.html" class="btn btn-outline-light btn-lg px-4">See the Impact</a> <!-- Link to impact.html -->
                     </div>
                 </div>
@@ -65,10 +83,10 @@
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contribute</a></li>
-                        <li><a href="#">See the Impact</a></li>
+                        <li><a href="#" class="text-green">Home</a></li>
+                        <li><a href="#" class="text-green">About</a></li>
+                        <li><a href="contribute.html" class="text-green">Contribute</a></li>
+                        <li><a href="impact.html" class="text-green">See the Impact</a></li>
                     </ul>
                 </div>
             </div>
