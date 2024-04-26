@@ -48,33 +48,37 @@
             </div>
         </nav>
 
+
+
+
         <div class="container py-5">
             <h2 class="mb-4">Dashboard</h2>
-            <form id="userInfoForm">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbzlQdh2p-7banzfD-5C9N8qCrh4Yfei6Fxn3P76uMcMFavcnDQKGYHBiUvoF_0n2m1b5A/exec" name="GFA" id="userInfoForm">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" value="John Doe" disabled>
+                    <input type="text" class="form-control" id="name" value="John Doe" name="name" disabled>
                 </div>
                 <div class="mb-3">
                     <label for="location" class="form-label">Location</label>
-                    <input type="text" class="form-control" id="location" value="Dhaka, Bangladesh" disabled>
+                    <input type="text" class="form-control" id="location" value="Dhaka, Bangladesh" name="location" disabled>
                 </div>
                 <div class="mb-3">
                     <label for="treeCount" class="form-label">Number of Trees Planted</label>
-                    <input type="number" class="form-control" id="treeCount" value="50" disabled>
+                    <input type="number" class="form-control" id="treeCount" value="50" name="treeCount" disabled>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" value="john@example.com" disabled>
+                    <input type="email" class="form-control" id="email" value="john@example.com" name="email" disabled>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" value="+1234567890" disabled>
+                    <input type="tel" class="form-control" id="phone" value="+1234567890" name="phone" disabled>
                 </div>
                 <button type="button" class="btn btn-primary" id="editInfoBtn">Edit Info</button>
-                <button type="submit" class="btn btn-success mt-3" id="saveInfoBtn" style="display: none;">Save Info</button>
+                <input type="submit" class="btn btn-success mt-3" id="saveInfoBtn" style="display: none;" value="Save Info" />
             </form>
-        </div>
+        </div>        
+
 
         <footer class="bg-dark text-white text-center p-3 mt-4">
             <div class="container">

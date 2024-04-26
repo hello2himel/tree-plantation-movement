@@ -31,3 +31,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Optionally, you can add more markers, polygons, or layers to the map as needed
 });
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwxrr9gY3hHl86SuG0uv8nQa0NJHnmqFYqzCzrqM0w4wWDuE-B--j9r9iwch5FHZK6o/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    const editButton = document.getElementById('editContributeBtn');
+    const submitButton = document.getElementById('submitContributeBtn');
+    const inputs = document.querySelectorAll('#contributeForm input');
+
+    editButton.addEventListener('click', function() {
+        inputs.forEach(input => {
+            input.disabled = false; // Enable all inputs for editing
+        });
+        submitButton.style.display = 'block'; // Show the submit button
+        editButton.style.display = 'none'; // Hide the edit button
+    });
+
+    const form = document.getElementById('contributeForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission if needed
+        inputs.forEach(input => {
+            input.disabled = false; // Make sure inputs are enabled for submission
+        });
+        form.submit(); // Submit the form
+    });
+});

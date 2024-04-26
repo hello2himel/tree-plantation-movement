@@ -32,26 +32,36 @@
 
     <div class="container py-5">
         <h2 class="mb-4">Contribute</h2>
-        <form id="contributeForm">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzlQdh2p-7banzfD-5C9N8qCrh4Yfei6Fxn3P76uMcMFavcnDQKGYHBiUvoF_0n2m1b5A/exec" name="GFA" id="contributeForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" value="Alice Johnson" required disabled>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="number" class="form-control" id="phone" name="phone" value="01234567890" required disabled>
+            </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" name="email" value="alice@example.com" required disabled>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" required>
+                <input type="password" class="form-control" id="password" name="password" value="password123" required disabled>
             </div>
             <div class="mb-3">
                 <label for="location" class="form-label">Location</label>
-                <input type="text" class="form-control" id="location" required>
+                <input type="text" class="form-control" id="location" name="location" value="Dhaka, Bangladesh" required disabled>
             </div>
             <div class="mb-3">
                 <label for="treeCount" class="form-label">Number of Trees to Plant</label>
-                <input type="number" class="form-control" id="treeCount" required>
+                <input type="number" class="form-control" id="treeCount" name="treeCount" value="10" required disabled>
             </div>
-            <button type="submit" class="btn btn-primary">Contribute</button>
+            <button type="button" class="btn btn-primary" id="editContributeBtn">Edit Info</button>
+            <input type="submit" value="Submit" id="submitContributeBtn" class="btn btn-success" style="display: none;">
         </form>
     </div>
+    
 
     <footer class="bg-dark text-white text-center p-3 mt-4">
         <div class="container">
